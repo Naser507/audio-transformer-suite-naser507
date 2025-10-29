@@ -338,4 +338,1391 @@ lf45zocn9x26   regular        177B      2 weeks ago   2 weeks ago   2         tr
 [?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker stop $(docker ps -aq) 2>/dev/null[27mdocker stop $(docker ps -aq) 2>/dev/null
 [?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker rm $(docker ps -aq) 2>/dev/null[27mdocker rm $(docker ps -aq) 2>/dev/null
 [?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker rmi $(docker images -q) 2>/dev/null[27mdocker rmi $(docker images -q) 2>/dev/null
-[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-tran
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker volume prune -f[27m
+[7mdocker network prune -f[27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker volume prune -f
+docker network prune -f
+[A
+[?2004lTotal reclaimed space: 0B
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker system prune -a -f --volumes[27mdocker system prune -a -f --volumes
+[?2004lTotal reclaimed space: 0B
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker images[27m
+[7mdocker ps -a[27m
+[7mdocker volume ls[27m
+[7mdocker network ls[27m
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker images
+docker ps -a
+docker volume ls
+docker network ls
+[A
+[?2004lREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+DRIVER    VOLUME NAME
+NETWORK ID     NAME      DRIVER    SCOPE
+d7efbf0cf399   bridge    bridge    local
+432ce0e75790   host      host      local
+aeb9a4062d99   none      null      local
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker network create audio-transformer-net[27mdocker network create audio-transformer-net
+[?2004lddf47d52f73aa5acf66d387d1a42989e6e0676c1aec48283cd0b06cc8f7bc3ca
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker network ls[27mdocker network ls
+[?2004lNETWORK ID     NAME                    DRIVER    SCOPE
+ddf47d52f73a   audio-transformer-net   bridge    local
+d7efbf0cf399   bridge                  bridge    local
+432ce0e75790   host                    host      local
+aeb9a4062d99   none                    null      local
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ gi [Kt add .
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git commit -m [7m"Clean Docker environment, initial project setup, Legacy_Image_1 mo[27m[7mv[27m[7med to backup"[27m[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C"Clean Docker environment, initial project setup, Legacy_Image_1 moved to backup"
+[?2004l[main 9acc7e6] Clean Docker environment, initial project setup, Legacy_Image_1 moved to backup
+ 2 files changed, 342 insertions(+)
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git push origin main 
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 5.56 KiB | 1.85 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/Naser507/audio-transformer-suite-naser507.git
+   0770a6a..9acc7e6  main -> main
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker network ls[27m[1Pdocker network l[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mdocker network create audio-transformer-net[27mdocker network create audio-transformer-net
+[?2004lError response from daemon: network with name audio-transformer-net already exists
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker network ls[27mdocker network ls
+[?2004lNETWORK ID     NAME                    DRIVER    SCOPE
+ddf47d52f73a   audio-transformer-net   bridge    local
+d7efbf0cf399   bridge                  bridge    local
+432ce0e75790   host                    host      local
+aeb9a4062d99   none                    null      local
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ tree
+[?2004l[01;34m.[0m
+├── audioTrasnformerApp.txt
+├── [01;34mbackend[0m
+│   └── app.py
+├── [01;34mcpp[0m
+│   ├── [01;32mbuild.sh[0m
+│   └── cpp_processor.cpp
+├── [01;34mdocker_archive[0m
+├── MY_PROGRESS.md
+├── README.md
+└── [01;34mstatic[0m
+    ├── [01;34mresults[0m
+    └── [01;34muploads[0m
+
+7 directories, 6 files
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mmkdir -p templates static/css static/js static/images[27mmkdir -p templates static/css static/js static/images
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ tree
+[?2004l[01;34m.[0m
+├── audioTrasnformerApp.txt
+├── [01;34mbackend[0m
+│   └── app.py
+├── [01;34mcpp[0m
+│   ├── [01;32mbuild.sh[0m
+│   └── cpp_processor.cpp
+├── [01;34mdocker_archive[0m
+├── MY_PROGRESS.md
+├── README.md
+├── [01;34mstatic[0m
+│   ├── [01;34mcss[0m
+│   ├── [01;34mimages[0m
+│   ├── [01;34mjs[0m
+│   ├── [01;34mresults[0m
+│   └── [01;34muploads[0m
+└── [01;34mtemplates[0m
+
+11 directories, 6 files
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ nano Dockerfile
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;73H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                                             Dockerfile                                                                       [1;155H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[38d[K[1;87H(B[0;7m*[155G(B[m[2d[36m# Use a lightweight Python image[3d[39m(B[mFROM python:3.11-slim[5d[36m# Set working directory[6d[39m(B[mWORKDIR /app[8d[36m# Copy backend and templates/static folders[9d[39m(B[mCOPY backend/ backend/[10dCOPY templates/ templates/[11dCOPY static/ static/[13d[36m# Install Flask (minimal dependencies for now)[14d[39m(B[mRUN pip install --no-cache-dir flask[16d[36m# Expose port for host access[17d[39m(B[mEXPOSE 5000[19d[36m# Default command to run Flask[20d[39m(B[mCMD ["python3", "backend/app.py"][21d[?12l[?25h[?25l[39;18H[22X[39;40H(B[0;7mM-D(B[m DOS Format    [39;69H          (B[0;7mM-A(B[m Append        [103G        [118G(B[0;7mM-B(B[m Backup File[K[40;2H(B[0;7mC(B[m Cancel[40;18H[22X[40;40H(B[0;7mM-M(B[m Mac Format      [40;69H          (B[0;7mM-P(B[m Prepend[21X[40;118H(B[0;7m^T(B[m Browse[K[38d(B[0;7mFile Name to Write: Dockerfile                                                                                                                              [38;31H(B[m[?12l[?25h[?25l[38;71H[1K (B[0;7m[ Writing... ](B[m[K[1;87H(B[0;7m [155G(B[m[38;70H(B[0;7m[ Wrote 19 lines ](B[m[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is      (B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute       (B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[118G  (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40;2H(B[0;7mX(B[m Exit  [40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace       (B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify       (B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[118G  (B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[?12l[?25h[21d[?25l[38d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker build -t audio-transformer-light .[27mdocker build -t audio-transformer-light .
+[?2004lDEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  144.4kB
+Step 1/8 : FROM python:3.11-slim
+3.11-slim: Pulling from library/python
+
+[1A[2K38513bd72563: Pulling fs layer [1B
+[1A[2Ka9ffe18d7fdb: Pulling fs layer [1B
+[1A[2Ke73850a50582: Pulling fs layer [1B
+[1A[2K19fb8589da02: Pulling fs layer [1B[1A[2K19fb8589da02: Waiting [1B[3A[2Ka9ffe18d7fdb: Downloading [>                                                  ]  13.69kB/1.293MB[3B[3A[2Ka9ffe18d7fdb: Downloading [=========>                                         ]  233.6kB/1.293MB[3B[3A[2Ka9ffe18d7fdb: Downloading [==============>                                    ]  376.8kB/1.293MB[3B[3A[2Ka9ffe18d7fdb: Downloading [=================================================> ]  1.278MB/1.293MB[3B[3A[2Ka9ffe18d7fdb: Download complete [3B[2A[2Ke73850a50582: Downloading [>                                                  ]  147.5kB/14.36MB[2B[4A[2K38513bd72563: Downloading [>                                                  ]  299.3kB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=>                                                 ]  441.9kB/14.36MB[2B[4A[2K38513bd72563: Downloading [=>                                                 ]  913.4kB/29.78MB[4B[2A[2Ke73850a50582: Downloading [===>                                               ]  884.7kB/14.36MB[2B[2A[2Ke73850a50582: Downloading [====>                                              ]  1.327MB/14.36MB[2B[4A[2K38513bd72563: Downloading [===>                                               ]   2.15MB/29.78MB[4B[4A[2K38513bd72563: Downloading [====>                                              ]  2.449MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [======>                                            ]  1.769MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=====>                                             ]  3.072MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [======>                                            ]  1.917MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [=======>                                           ]  2.212MB/14.36MB[2B[4A[2K38513bd72563: Downloading [======>                                            ]  3.695MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=========>                                         ]  2.814MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [===========>                                       ]  3.256MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=======>                                           ]  4.313MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=============>                                     ]  3.994MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=======>                                           ]  4.624MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [==============>                                    ]  4.289MB/14.36MB[2B[4A[2K38513bd72563: Downloading [========>                                          ]  4.935MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [================>                                  ]  4.731MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [=================>                                 ]  5.026MB/14.36MB[2B[4A[2K38513bd72563: Downloading [========>                                          ]  5.247MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [==================>                                ]  5.321MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=========>                                         ]  5.558MB/29.78MB[4B[1A[2K19fb8589da02: Downloading [==================================================>]     249B/249B[1B[1A[2K19fb8589da02: Verifying Checksum [1B[1A[2K19fb8589da02: Download complete [1B[2A[2Ke73850a50582: Downloading [===================>                               ]  5.616MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=========>                                         ]  5.869MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [====================>                              ]  5.911MB/14.36MB[2B[4A[2K38513bd72563: Downloading [==========>                                        ]  6.177MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=====================>                             ]  6.205MB/14.36MB[2B[4A[2K38513bd72563: Downloading [==========>                                        ]  6.488MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [======================>                            ]    6.5MB/14.36MB[2B[4A[2K38513bd72563: Downloading [===========>                                       ]  6.799MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=======================>                           ]  6.648MB/14.36MB[2B[4A[2K38513bd72563: Downloading [===========>                                       ]  7.111MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [========================>                          ]  6.943MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [========================>                          ]   7.09MB/14.36MB[2B[4A[2K38513bd72563: Downloading [============>                                      ]  7.422MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=========================>                         ]  7.385MB/14.36MB[2B[4A[2K38513bd72563: Downloading [============>                                      ]  7.733MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [==========================>                        ]  7.533MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [===========================>                       ]  7.827MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=============>                                     ]  8.045MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [============================>                      ]  8.122MB/14.36MB[2B[4A[2K38513bd72563: Downloading [==============>                                    ]  8.356MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=============================>                     ]  8.417MB/14.36MB[2B[4A[2K38513bd72563: Downloading [==============>                                    ]  8.667MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [==============================>                    ]  8.712MB/14.36MB[2B[4A[2K38513bd72563: Downloading [===============>                                   ]  8.978MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [===============================>                   ]  9.159MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [================================>                  ]  9.454MB/14.36MB[2B[4A[2K38513bd72563: Downloading [================>                                  ]  9.601MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=================================>                 ]  9.753MB/14.36MB[2B[4A[2K38513bd72563: Downloading [================>                                  ]  9.912MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [===================================>               ]  10.19MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=================>                                 ]  10.22MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [====================================>              ]  10.34MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=================>                                 ]  10.53MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=====================================>             ]  10.64MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [======================================>            ]  10.93MB/14.36MB[2B[4A[2K38513bd72563: Downloading [==================>                                ]  10.85MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=======================================>           ]  11.24MB/14.36MB[2B[4A[2K38513bd72563: Downloading [==================>                                ]  11.16MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=======================================>           ]  11.39MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [========================================>          ]  11.53MB/14.36MB[2B[4A[2K38513bd72563: Downloading [===================>                               ]  11.46MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [========================================>          ]  11.68MB/14.36MB[2B[4A[2K38513bd72563: Downloading [===================>                               ]  11.77MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=========================================>         ]  11.83MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [==========================================>        ]  12.27MB/14.36MB[2B[4A[2K38513bd72563: Downloading [====================>                              ]  12.39MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [============================================>      ]  12.71MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=====================>                             ]   12.7MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [============================================>      ]  12.87MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=====================>                             ]  13.01MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=============================================>     ]  13.02MB/14.36MB[2B[4A[2K38513bd72563: Downloading [======================>                            ]  13.32MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [==============================================>    ]  13.32MB/14.36MB[2B[4A[2K38513bd72563: Downloading [======================>                            ]  13.63MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [===============================================>   ]  13.76MB/14.36MB[2B[2A[2Ke73850a50582: Downloading [================================================>  ]  14.05MB/14.36MB[2B[4A[2K38513bd72563: Downloading [=======================>                           ]  14.25MB/29.78MB[4B[2A[2Ke73850a50582: Downloading [=================================================> ]  14.35MB/14.36MB[2B[2A[2Ke73850a50582: Verifying Checksum [2B[2A[2Ke73850a50582: Download complete [2B[4A[2K38513bd72563: Downloading [========================>                          ]  14.56MB/29.78MB[4B[4A[2K38513bd72563: Downloading [========================>                          ]  14.87MB/29.78MB[4B[4A[2K38513bd72563: Downloading [=========================>                         ]  15.18MB/29.78MB[4B[4A[2K38513bd72563: Downloading [==========================>                        ]   15.5MB/29.78MB[4B[4A[2K38513bd72563: Downloading [==========================>                        ]  15.81MB/29.78MB[4B[4A[2K38513bd72563: Downloading [===========================>                       ]  16.12MB/29.78MB[4B[4A[2K38513bd72563: Downloading [===========================>                       ]  16.43MB/29.78MB[4B[4A[2K38513bd72563: Downloading [============================>                      ]  17.05MB/29.78MB[4B[4A[2K38513bd72563: Downloading [=============================>                     ]  17.67MB/29.78MB[4B[4A[2K38513bd72563: Downloading [==============================>                    ]  18.29MB/29.78MB[4B[4A[2K38513bd72563: Downloading [================================>                  ]  19.23MB/29.78MB[4B[4A[2K38513bd72563: Downloading [=================================>                 ]  20.16MB/29.78MB[4B[4A[2K38513bd72563: Downloading [===================================>               ]  21.09MB/29.78MB[4B[4A[2K38513bd72563: Downloading [====================================>              ]  21.71MB/29.78MB[4B[4A[2K38513bd72563: Downloading [=====================================>             ]  22.34MB/29.78MB[4B[4A[2K38513bd72563: Downloading [======================================>            ]  22.96MB/29.78MB[4B[4A[2K38513bd72563: Downloading [=======================================>           ]  23.58MB/29.78MB[4B[4A[2K38513bd72563: Downloading [========================================>          ]  24.19MB/29.78MB[4B[4A[2K38513bd72563: Downloading [=========================================>         ]  24.81MB/29.78MB[4B[4A[2K38513bd72563: Downloading [==========================================>        ]  25.44MB/29.78MB[4B[4A[2K38513bd72563: Download complete [4B[4A[2K38513bd72563: Extracting [>                                                  ]  327.7kB/29.78MB[4B[4A[2K38513bd72563: Extracting [===>                                               ]  1.966MB/29.78MB[4B[4A[2K38513bd72563: Extracting [======>                                            ]  3.932MB/29.78MB[4B[4A[2K38513bd72563: Extracting [=========>                                         ]  5.898MB/29.78MB[4B[4A[2K38513bd72563: Extracting [============>                                      ]  7.537MB/29.78MB[4B[4A[2K38513bd72563: Extracting [===============>                                   ]  9.503MB/29.78MB[4B[4A[2K38513bd72563: Extracting [=================>                                 ]  10.49MB/29.78MB[4B[4A[2K38513bd72563: Extracting [===================>                               ]   11.8MB/29.78MB[4B[4A[2K38513bd72563: Extracting [=======================>                           ]  14.09MB/29.78MB[4B[4A[2K38513bd72563: Extracting [===========================>                       ]  16.38MB/29.78MB[4B[4A[2K38513bd72563: Extracting [================================>                  ]  19.33MB/29.78MB[4B[4A[2K38513bd72563: Extracting [=====================================>             ]  22.28MB/29.78MB[4B[4A[2K38513bd72563: Extracting [=========================================>         ]   24.9MB/29.78MB[4B[4A[2K38513bd72563: Extracting [============================================>      ]  26.21MB/29.78MB[4B[4A[2K38513bd72563: Extracting [==============================================>    ]  27.85MB/29.78MB[4B[4A[2K38513bd72563: Extracting [===============================================>   ]  28.51MB/29.78MB[4B[4A[2K38513bd72563: Extracting [================================================>  ]  28.84MB/29.78MB[4B[4A[2K38513bd72563: Extracting [================================================>  ]  29.16MB/29.78MB[4B[4A[2K38513bd72563: Extracting [==================================================>]  29.78MB/29.78MB[4B[4A[2K38513bd72563: Pull complete [4B[3A[2Ka9ffe18d7fdb: Extracting [=>                                                 ]  32.77kB/1.293MB[3B[3A[2Ka9ffe18d7fdb: Extracting [=====================>                             ]  557.1kB/1.293MB[3B[3A[2Ka9ffe18d7fdb: Extracting [==================================================>]  1.293MB/1.293MB[3B[3A[2Ka9ffe18d7fdb: Pull complete [3B[2A[2Ke73850a50582: Extracting [>                                                  ]  163.8kB/14.36MB[2B[2A[2Ke73850a50582: Extracting [==>                                                ]  819.2kB/14.36MB[2B[2A[2Ke73850a50582: Extracting [==========>                                        ]  2.949MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [============>                                      ]  3.604MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [=====================>                             ]  6.062MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [==========================>                        ]  7.537MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [================================>                  ]  9.339MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [==================================>                ]  9.994MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [====================================>              ]  10.49MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [=======================================>           ]   11.3MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [==========================================>        ]  12.12MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [===========================================>       ]  12.62MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [==============================================>    ]  13.27MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [=================================================> ]  14.09MB/14.36MB[2B[2A[2Ke73850a50582: Extracting [==================================================>]  14.36MB/14.36MB[2B[2A[2Ke73850a50582: Pull complete [2B[1A[2K19fb8589da02: Extracting [==================================================>]     249B/249B[1B[1A[2K19fb8589da02: Extracting [==================================================>]     249B/249B[1B[1A[2K19fb8589da02: Pull complete [1BDigest: sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617
+Status: Downloaded newer image for python:3.11-slim
+ ---> ff15e80be861
+Step 2/8 : WORKDIR /app
+ ---> Running in 95cf5f0dc4b7
+ ---> Removed intermediate container 95cf5f0dc4b7
+ ---> 8717d3949999
+Step 3/8 : COPY backend/ backend/
+ ---> d8a678d715f6
+Step 4/8 : COPY templates/ templates/
+ ---> 3e54bdbe83f7
+Step 5/8 : COPY static/ static/
+ ---> 5c2893a801e1
+Step 6/8 : RUN pip install --no-cache-dir flask
+ ---> Running in 4653956f8e53
+Collecting flask
+  Downloading flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting blinker>=1.9.0 (from flask)
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from flask)
+  Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from flask)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from flask)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from flask)
+  Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from flask)
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 894.5 kB/s eta 0:00:00
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.3.0-py3-none-any.whl (107 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.3/107.3 kB 1.7 MB/s eta 0:00:00
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 3.1 MB/s eta 0:00:00
+Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 2.1 MB/s eta 0:00:00
+Installing collected packages: markupsafe, itsdangerous, click, blinker, werkzeug, jinja2, flask
+Successfully installed blinker-1.9.0 click-8.3.0 flask-3.1.2 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 werkzeug-3.1.3
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m[91m
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+[0m ---> Removed intermediate container 4653956f8e53
+ ---> 9ff621dbcd82
+Step 7/8 : EXPOSE 5000
+ ---> Running in 52a65a5ecd7c
+ ---> Removed intermediate container 52a65a5ecd7c
+ ---> 1541b58ee621
+Step 8/8 : CMD ["python3", "backend/app.py"]
+ ---> Running in b5c01c50e1e7
+ ---> Removed intermediate container b5c01c50e1e7
+ ---> a403441cfb83
+Successfully built a403441cfb83
+Successfully tagged audio-transformer-light:latest
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker run -d \[27m
+[7m  --name audio-transformer-container \[27m
+[7m  --network audio-transformer-net \[27m
+[7m  -p 5000:5000 \[27m
+[7m  audio-transformer-light[27m
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d \
+  --name audio-transformer-container \
+  --network audio-transformer-net \
+  -p 5000:5000 \
+  audio-transformer-light
+[A
+[?2004lfc8d9b5791c5dece6adc8020990c111dedf2cd31c029c04571293cc3c40808dd
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mip addr show[27mip addr show
+[?2004l1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:fd:27:33 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 68726sec preferred_lft 68726sec
+    inet6 fd17:625c:f037:2:258e:69be:5034:d016/64 scope global temporary dynamic 
+       valid_lft 86202sec preferred_lft 14202sec
+    inet6 fd17:625c:f037:2:7211:f4f0:a29c:8601/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 86202sec preferred_lft 14202sec
+    inet6 fe80::cfa6:2f3a:f9e2:d3a5/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:db:e8:e2 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.68.107/24 brd 192.168.68.255 scope global dynamic noprefixroute enp0s8
+       valid_lft 5171sec preferred_lft 5171sec
+    inet6 fe80::593b:f4ab:4bb7:a461/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+4: enp0s9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:b5:98:bb brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.101/24 brd 192.168.56.255 scope global dynamic noprefixroute enp0s9
+       valid_lft 327sec preferred_lft 327sec
+    inet6 fe80::ad1b:25d1:a15d:4a3/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+5: br-10b68d408f7b: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:81:2a:75:03 brd ff:ff:ff:ff:ff:ff
+    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-10b68d408f7b
+       valid_lft forever preferred_lft forever
+6: br-27617212d5da: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:78:19:f3:8e brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-27617212d5da
+       valid_lft forever preferred_lft forever
+7: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:0b:5d:c8:1e brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:bff:fe5d:c81e/64 scope link 
+       valid_lft forever preferred_lft forever
+8: br-7bf0fba653b2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:50:27:4b:1d brd ff:ff:ff:ff:ff:ff
+    inet 172.21.0.1/16 brd 172.21.255.255 scope global br-7bf0fba653b2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:50ff:fe27:4b1d/64 scope link 
+       valid_lft forever preferred_lft forever
+9: br-cbd34b00babe: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:d2:e6:17:c2 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.0.1/16 brd 172.20.255.255 scope global br-cbd34b00babe
+       valid_lft forever preferred_lft forever
+18: br-ddf47d52f73a: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:eb:cd:f8:e6 brd ff:ff:ff:ff:ff:ff
+    inet 172.22.0.1/16 brd 172.22.255.255 scope global br-ddf47d52f73a
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:ebff:fecd:f8e6/64 scope link 
+       valid_lft forever preferred_lft forever
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ th[Kree
+[?2004l[01;34m.[0m
+├── audioTrasnformerApp.txt
+├── [01;34mbackend[0m
+│   └── app.py
+├── [01;34mcpp[0m
+│   ├── [01;32mbuild.sh[0m
+│   └── cpp_processor.cpp
+├── [01;34mdocker_archive[0m
+├── Dockerfile
+├── MY_PROGRESS.md
+├── README.md
+├── [01;34mstatic[0m
+│   ├── [01;34mcss[0m
+│   ├── [01;34mimages[0m
+│   ├── [01;34mjs[0m
+│   ├── [01;34mresults[0m
+│   └── [01;34muploads[0m
+└── [01;34mtemplates[0m
+
+11 directories, 7 files
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ cd [7maudio-transformer-suite/templates/[27maudio-transformer-suite/templates/
+[?2004lbash: cd: audio-transformer-suite/templates/: No such file or directory
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ cd templates/
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/templates[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/templates[00m$ ls
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/templates[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/templates[00m$ v[K[7mcd ~/projects_series/audio-transformer-suite/templates[27mcd ~/projects_series/audio-transformer-suite/templates
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/templates[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/templates[00m$ [7mnano index.html[27mnano index.html
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;73H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                                             index.html                                                                       [1;155H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[38d[K[1;87H(B[0;7m*[155G(B[m[2d[36m<!DOCTYPE html>[3d<html [31mlang=[32m"en"[36m>[4d<head>[5d<meta [31mcharset=[32m"UTF-8"[36m>[6;5H<title>[39m(B[mAudio Transformer Suite[36m</title>[7;5H<link [31mrel=[32m"stylesheet"[36m [31mhref=[32m"{{ url_for('static', filename='css/style.css') }}"[36m>[8d</head>[9d<body>[10d<header>[11;9H<h1>[39m(B[mAudio Transformer Suite[36m</h1>[12;9H<h3>[39m(B[mYour ultimate audio processing webapp[36m</h3>[13;9H<hr>[14;5H</header>[16;5H<main>[17d<p>[39m(B[mLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[36m</p>[18;5H</main>[20;5H<footer>[21;9H<p>[39m(B[mFooter placeholder — something here later[36m</p>[22;5H</footer>[24;5H<script [31msrc=[32m"{{ url_for('static', filename='js/script.js') }}"[36m></script>[25d</body>[26d</html>[27d[39m(B[m[?12l[?25h[?25l[39;18H[22X[39;40H(B[0;7mM-D(B[m DOS Format    [39;69H          (B[0;7mM-A(B[m Append        [103G        [118G(B[0;7mM-B(B[m Backup File[K[40;2H(B[0;7mC(B[m Cancel[40;18H[22X[40;40H(B[0;7mM-M(B[m Mac Format      [40;69H          (B[0;7mM-P(B[m Prepend[21X[40;118H(B[0;7m^T(B[m Browse[K[38d(B[0;7mFile Name to Write: index.html                                                                                                                              [38;31H(B[m[?12l[?25h[?25l[38;71H[1K (B[0;7m[ Writing... ](B[m[K[1;87H(B[0;7m [155G(B[m[38;70H(B[0;7m[ Wrote 25 lines ](B[m[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is      (B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute       (B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[118G  (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40;2H(B[0;7mX(B[m Exit  [40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace       (B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify       (B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[118G  (B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[?12l[?25h[27d[?25l[38d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/templates[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/templates[00m$ [7mcd ../static/css[27mcd ../static/css
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/static/css[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/static/css[00m$ [7mnano style.css[27mnano style.css
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;73H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                                              style.css                                                                       [1;155H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[38d[K[1;87H(B[0;7m*[155G(B[m[2d(B[0;1m[34m/* General body */[3d[31mbody (B[0m[32m{[4d(B[0;1m[33m    margin(B[0m[32m:(B[0;1m[37m 0(B[0m[32m;[5d(B[0;1m[33m    font-family(B[0m[32m:(B[0;1m[37m Arial, sans-serif(B[0m[32m;[6d}[8d(B[0;1m[34m/* Header */[9d[31mheader (B[0m[32m{[10d(B[0;1m[33m    background-color(B[0m[32m:(B[0;1m[37m #6a0dad(B[0m[32m;(B[0;1m[33m [34m/* purple */[11d[33m    color(B[0m[32m:(B[0;1m[37m white(B[0m[32m;[12d(B[0;1m[33m    text-align(B[0m[32m:(B[0;1m[37m center(B[0m[32m;[13d(B[0;1m[33m    padding(B[0m[32m:(B[0;1m[37m 20px(B[0m[32m;[14d}[16d(B[0;1m[31mheader hr (B[0m[32m{[17d(B[0;1m[33m    border(B[0m[32m:(B[0;1m[37m 1px solid white(B[0m[32m;[18d(B[0;1m[33m    width(B[0m[32m:(B[0;1m[37m 80%(B[0m[32m;[19d(B[0;1m[33m    margin(B[0m[32m:(B[0;1m[37m 10px auto(B[0m[32m;[20d}[22d(B[0;1m[34m/* Main content */[23d[31mmain (B[0m[32m{[24d(B[0;1m[33m    background-color(B[0m[32m:(B[0;1m[37m white(B[0m[32m;[25d(B[0;1m[33m    padding(B[0m[32m:(B[0;1m[37m 40px(B[0m[32m;[26d(B[0;1m[33m    min-height(B[0m[32m:(B[0;1m[37m 400px(B[0m[32m;[27d}[29d(B[0;1m[34m/* Footer */[30d[31mfooter (B[0m[32m{[31d(B[0;1m[33m    background-color(B[0m[32m:(B[0;1m[37m #9b59b6(B[0m[32m;(B[0;1m[33m [34m/* lighter purple */[32d[33m    color(B[0m[32m:(B[0;1m[37m white(B[0m[32m;[33d(B[0;1m[33m    text-align(B[0m[32m:(B[0;1m[37m center(B[0m[32m;[34d(B[0;1m[33m    padding(B[0m[32m:(B[0;1m[37m 15px(B[0m[32m;[35d}[36d[39m(B[m[?12l[?25h[?25l[37d[?12l[?25h[?25l[39;18H[22X[39;40H(B[0;7mM-D(B[m DOS Format    [39;69H          (B[0;7mM-A(B[m Append        [103G        [118G(B[0;7mM-B(B[m Backup File[K[40;2H(B[0;7mC(B[m Cancel[40;18H[22X[40;40H(B[0;7mM-M(B[m Mac Format      [40;69H          (B[0;7mM-P(B[m Prepend[21X[40;118H(B[0;7m^T(B[m Browse[K[38d(B[0;7mFile Name to Write: style.css                                                                                                                               [38;30H(B[m[?12l[?25h[?25l[38;71H[1K (B[0;7m[ Writing... ](B[m[K[1;87H(B[0;7m [155G(B[m[38;70H(B[0;7m[ Wrote 35 lines ](B[m[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is      (B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute       (B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[118G  (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40;2H(B[0;7mX(B[m Exit  [40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace       (B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify       (B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[118G  (B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[?12l[?25h[37d[?25l[38d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/static/css[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/static/css[00m$ [7mcd ../js[27mcd ../js
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/static/js[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/static/js[00m$ [7mconsole.log("Audio Transformer Suite frontend loaded");[27mconsole.log("Audio Transformer Suite frontend loaded");
+[?2004lbash: syntax error near unexpected token `"Audio Transformer Suite frontend loaded"'
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/static/js[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/static/js[00m$ [7mnano script.js[27mnano script.js
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;73H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                                              script.js                                                                       [1;155H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[38d[K[1;87H(B[0;7m*[155G(B[m[2dconsole.log((B[0;1m[35m"Audio Transformer Suite frontend loaded"[39m(B[m);[?12l[?25h[?25l[3d[?12l[?25h[?25l[39;18H[22X[39;40H(B[0;7mM-D(B[m DOS Format    [39;69H          (B[0;7mM-A(B[m Append        [103G        [118G(B[0;7mM-B(B[m Backup File[K[40;2H(B[0;7mC(B[m Cancel[40;18H[22X[40;40H(B[0;7mM-M(B[m Mac Format      [40;69H          (B[0;7mM-P(B[m Prepend[21X[40;118H(B[0;7m^T(B[m Browse[K[38d(B[0;7mFile Name to Write: script.js                                                                                                                               [38;30H(B[m[?12l[?25h[?25l[38;71H[1K (B[0;7m[ Writing... ](B[m[K[1;87H(B[0;7m [155G(B[m[38;70H(B[0;7m[ Wrote 2 lines ](B[m[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is      (B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute       (B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[118G  (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40;2H(B[0;7mX(B[m Exit  [40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace       (B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify       (B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[118G  (B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[?12l[?25h[3d[?25l[38d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/static/js[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/static/js[00m$ cd ..
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/static[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/static[00m$ cd..
+[?2004lcd..: command not found
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/static[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/static[00m$ cd ..
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ cd[K[Kls
+[?2004laudioTrasnformerApp.txt  [0m[01;34mbackend[0m  [01;34mcpp[0m  [01;34mdocker_archive[0m  Dockerfile  MY_PROGRESS.md  README.md  [01;34mstatic[0m  [01;34mtemplates[0m
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ cdb[K backend/
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/backend[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/backend[00m$ ls
+[?2004lapp.py
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/backend[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/backend[00m$ nano app.py 
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;72H(B[0;7m[ Reading... ](B[m[38;71H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2                                                               app.py                                                                         [1;155H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[1;85H(B[0;7m*[38d(B[m[K[1;155H[2d(B[0;1m[36mfrom[39m(B[m flask (B[0;1m[36mimport[39m(B[m Flask, render_template[4dapp = Flask(__name__)[6d@app.route((B[0;1m[32m"/"[39m(B[m)[7d(B[0;1m[36mdef[34m home[39m(B[m():[8;5H(B[0;1m[36mreturn[39m(B[m render_template((B[0;1m[32m"index.html"[39m(B[m)[10d(B[0;1m[36mif[39m(B[m __name__ == (B[0;1m[32m"__main__"[39m(B[m:[11;5Happ.run(host=(B[0;1m[32m"0.0.0.0"[39m(B[m, port=5000)[12d[?12l[?25h[?25l[39;18H[22X[39;40H(B[0;7mM-D(B[m DOS Format    [39;69H          (B[0;7mM-A(B[m Append        [103G        [118G(B[0;7mM-B(B[m Backup File[K[40;2H(B[0;7mC(B[m Cancel[40;18H[22X[40;40H(B[0;7mM-M(B[m Mac Format      [40;69H          (B[0;7mM-P(B[m Prepend[21X[40;118H(B[0;7m^T(B[m Browse[K[38d(B[0;7mFile Name to Write: app.py                                                                                                                                  [38;27H(B[m[?12l[?25h[?25l[38;71H[1K (B[0;7m[ Writing... ](B[m[K[1;85H(B[0;7m [155G(B[m[38;70H(B[0;7m[ Wrote 10 lines ](B[m[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is      (B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute       (B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[118G  (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40;2H(B[0;7mX(B[m Exit  [40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace       (B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify       (B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[118G  (B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[?12l[?25h[12d[?25l[38d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/backend[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/backend[00m$ [7mcd ~/projects_series/audio-transformer-suite[27mcd ~/projects_series/audio-transformer-suite
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker build -t audio-transformer-light .[27mdocker build -t audio-transformer-light .
+[?2004lDEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon    194kB
+Step 1/8 : FROM python:3.11-slim
+ ---> ff15e80be861
+Step 2/8 : WORKDIR /app
+ ---> Using cache
+ ---> 8717d3949999
+Step 3/8 : COPY backend/ backend/
+ ---> 1e22233a970b
+Step 4/8 : COPY templates/ templates/
+ ---> 639b1d7d4bf1
+Step 5/8 : COPY static/ static/
+ ---> 9c84c57c50ee
+Step 6/8 : RUN pip install --no-cache-dir flask
+ ---> Running in 7a8a82e54b47
+Collecting flask
+  Downloading flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting blinker>=1.9.0 (from flask)
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from flask)
+  Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from flask)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from flask)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from flask)
+  Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from flask)
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 671.2 kB/s eta 0:00:00
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.3.0-py3-none-any.whl (107 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.3/107.3 kB 276.2 kB/s eta 0:00:00
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 2.9 MB/s eta 0:00:00
+Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 984.8 kB/s eta 0:00:00
+Installing collected packages: markupsafe, itsdangerous, click, blinker, werkzeug, jinja2, flask
+Successfully installed blinker-1.9.0 click-8.3.0 flask-3.1.2 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 werkzeug-3.1.3
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m[91m
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+[0m ---> Removed intermediate container 7a8a82e54b47
+ ---> e97ffbdb59e3
+Step 7/8 : EXPOSE 5000
+ ---> Running in 04a3668a8c89
+ ---> Removed intermediate container 04a3668a8c89
+ ---> 7b29d67c7fde
+Step 8/8 : CMD ["python3", "backend/app.py"]
+ ---> Running in 57b64db28b90
+ ---> Removed intermediate container 57b64db28b90
+ ---> 2c60ef052d09
+Successfully built 2c60ef052d09
+Successfully tagged audio-transformer-light:latest
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker run -d \[27m
+[7m  --name audio-transformer-container \[27m
+[7m  --network audio-transformer-net \[27m
+[7m  -p 5000:5000 \[27m
+[7m  audio-transformer-light[27m
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d \
+  --name audio-transformer-container \
+  --network audio-transformer-net \
+  -p 5000:5000 \
+  audio-transformer-light
+[A
+[?2004ldocker: Error response from daemon: Conflict. The container name "/audio-transformer-container" is already in use by container "fc8d9b5791c5dece6adc8020990c111dedf2cd31c029c04571293cc3c40808dd". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker rm -f audio-transformer-container[27mdocker rm -f audio-transformer-container
+[?2004laudio-transformer-container
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker run -d \[27m
+[7m  --name audio-transformer-container \[27m
+[7m  --network audio-transformer-net \[27m
+[7m  -p 5000:5000 \[27m
+[7m  audio-transformer-light[27m
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d \
+  --name audio-transformer-container \
+  --network audio-transformer-net \
+  -p 5000:5000 \
+  audio-transformer-light
+[A
+[?2004l6cc380e1c8a8f68b93297fe2cc9a5078cbd2dbaf3640f290fb9508bf5d721b6b
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ ip addr show 
+[?2004l1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:fd:27:33 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 67211sec preferred_lft 67211sec
+    inet6 fd17:625c:f037:2:258e:69be:5034:d016/64 scope global temporary dynamic 
+       valid_lft 86123sec preferred_lft 14123sec
+    inet6 fd17:625c:f037:2:7211:f4f0:a29c:8601/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 86123sec preferred_lft 14123sec
+    inet6 fe80::cfa6:2f3a:f9e2:d3a5/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:db:e8:e2 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.68.107/24 brd 192.168.68.255 scope global dynamic noprefixroute enp0s8
+       valid_lft 3656sec preferred_lft 3656sec
+    inet6 fe80::593b:f4ab:4bb7:a461/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+4: enp0s9: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:b5:98:bb brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.101/24 brd 192.168.56.255 scope global dynamic noprefixroute enp0s9
+       valid_lft 312sec preferred_lft 312sec
+    inet6 fe80::ad1b:25d1:a15d:4a3/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+5: br-10b68d408f7b: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:81:2a:75:03 brd ff:ff:ff:ff:ff:ff
+    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-10b68d408f7b
+       valid_lft forever preferred_lft forever
+6: br-27617212d5da: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:78:19:f3:8e brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-27617212d5da
+       valid_lft forever preferred_lft forever
+7: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:0b:5d:c8:1e brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:bff:fe5d:c81e/64 scope link 
+       valid_lft forever preferred_lft forever
+8: br-7bf0fba653b2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:50:27:4b:1d brd ff:ff:ff:ff:ff:ff
+    inet 172.21.0.1/16 brd 172.21.255.255 scope global br-7bf0fba653b2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:50ff:fe27:4b1d/64 scope link 
+       valid_lft forever preferred_lft forever
+9: br-cbd34b00babe: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:d2:e6:17:c2 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.0.1/16 brd 172.20.255.255 scope global br-cbd34b00babe
+       valid_lft forever preferred_lft forever
+18: br-ddf47d52f73a: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:eb:cd:f8:e6 brd ff:ff:ff:ff:ff:ff
+    inet 172.22.0.1/16 brd 172.22.255.255 scope global br-ddf47d52f73a
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:ebff:fecd:f8e6/64 scope link 
+       valid_lft forever preferred_lft forever
+26: veth76480e9@if25: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-ddf47d52f73a state UP group default 
+    link/ether a6:70:dc:c0:63:10 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::a470:dcff:fec0:6310/64 scope link 
+       valid_lft forever preferred_lft forever
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker rm -f audio-transformer-container[27mdocker rm -f audio-transformer-container
+[?2004laudio-transformer-container
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker run -d \[27m
+[7m  --name audio-transformer-container \[27m
+[7m  --network audio-transformer-net \[27m
+[7m  -p 5000:5000 \[27m
+[7m  audio-transformer-light[27m
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run -d \
+  --name audio-transformer-container \
+  --network audio-transformer-net \
+  -p 5000:5000 \
+  audio-transformer-light
+[A
+[?2004ld524725835bc7453c6b6ad08da1b754da20965e185a0680967912f33a0e5ee57
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker logs <container_name>[27mdocker logs <container_name>
+[?2004lbash: syntax error near unexpected token `newline'
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mpython3 app.py[27mpython3 app.py
+[?2004lpython3: can't open file '/home/naser-xfce/projects_series/audio-transformer-suite/app.py': [Errno 2] No such file or directory
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker logs audio-analyzer-container[27mdocker logs audio-analyzer-container
+[?2004lError response from daemon: No such container: audio-analyzer-container
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+d524725835bc   audio-transformer-light   "python3 backend/app…"   17 minutes ago   Up 17 minutes   0.0.0.0:5000->5000/tcp, :::5000->5000/tcp   audio-transformer-container
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker logs audio-transformer-container[27mdocker logs audio-transformer-container
+[?2004l * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.0.2:5000
+[33mPress CTRL+C to quit[0m
+[2025-10-29 19:54:59,718] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 19:54:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 19:55:00,273] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 19:55:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 19:55:00,448] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 19:55:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mmkdir backend/templates[27mmkdir backend/templates
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ nano index.htm;[Kl
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;73H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2                                                             index.html                                                                       [1;155H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[2d[?12l[?25h[?25l[38d[K[1;87H(B[0;7m*[155G(B[m[2d[33m<!-- backend/templates/index.html -->[3d[36m<!DOCTYPE html>[4d<html [31mlang=[32m"en"[36m>[5d<head>[6d<meta [31mcharset=[32m"UTF-8"[36m>[7;5H<title>[39m(B[mAudio Transformer Suite[36m</title>[8d</head>[9d<body>[10d<h1>[39m(B[mAudio Transformer Suite[36m</h1>[11;5H<p>[39m(B[mFlask is working![36m</p>[12d</body>[13d</html>[14d[39m(B[m[?12l[?25h[?25l[39;18H[22X[39;40H(B[0;7mM-D(B[m DOS Format    [39;69H          (B[0;7mM-A(B[m Append        [103G        [118G(B[0;7mM-B(B[m Backup File[K[40;2H(B[0;7mC(B[m Cancel[40;18H[22X[40;40H(B[0;7mM-M(B[m Mac Format      [40;69H          (B[0;7mM-P(B[m Prepend[21X[40;118H(B[0;7m^T(B[m Browse[K[38d(B[0;7mFile Name to Write: index.html                                                                                                                              [38;31H(B[m[?12l[?25h[?25l[38;71H[1K (B[0;7m[ Writing... ](B[m[K[1;87H(B[0;7m [155G(B[m[38;70H(B[0;7m[ Wrote 12 lines ](B[m[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is      (B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute       (B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[118G  (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40;2H(B[0;7mX(B[m Exit  [40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace       (B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify       (B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[118G  (B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[?12l[?25h[14d[?25l[38d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker stop audio-transformer-container[27m
+[7mdocker rm audio-transformer-container[27m
+[7mdocker build -t audio-transformer-light .[27m
+[7mdocker run -d -p 5000:5000 --name audio-transformer-container audio-transformer-light[27m
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker stop audio-transformer-container
+docker rm audio-transformer-container
+docker build -t audio-transformer-light .
+docker run -d -p 5000:5000 --name audio-transformer-container audio-transformer-light
+[A
+[?2004laudio-transformer-container
+audio-transformer-container
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  220.2kB
+Step 1/8 : FROM python:3.11-slim
+ ---> ff15e80be861
+Step 2/8 : WORKDIR /app
+ ---> Using cache
+ ---> 8717d3949999
+Step 3/8 : COPY backend/ backend/
+ ---> 252183609270
+Step 4/8 : COPY templates/ templates/
+ ---> 4aecc6588d22
+Step 5/8 : COPY static/ static/
+ ---> 2a81651311d7
+Step 6/8 : RUN pip install --no-cache-dir flask
+ ---> Running in 46cb65b6f276
+Collecting flask
+  Downloading flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting blinker>=1.9.0 (from flask)
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from flask)
+  Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from flask)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from flask)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from flask)
+  Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from flask)
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 773.3 kB/s eta 0:00:00
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.3.0-py3-none-any.whl (107 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.3/107.3 kB 1.2 MB/s eta 0:00:00
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 946.2 kB/s eta 0:00:00
+Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 1.5 MB/s eta 0:00:00
+Installing collected packages: markupsafe, itsdangerous, click, blinker, werkzeug, jinja2, flask
+Successfully installed blinker-1.9.0 click-8.3.0 flask-3.1.2 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 werkzeug-3.1.3
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m[91m
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+[0m ---> Removed intermediate container 46cb65b6f276
+ ---> ba9545b19da1
+Step 7/8 : EXPOSE 5000
+ ---> Running in 119e445e69be
+ ---> Removed intermediate container 119e445e69be
+ ---> 8c019b367461
+Step 8/8 : CMD ["python3", "backend/app.py"]
+ ---> Running in 19bd6c5f50c1
+ ---> Removed intermediate container 19bd6c5f50c1
+ ---> 57ed7169cc38
+Successfully built 57ed7169cc38
+Successfully tagged audio-transformer-light:latest
+9ce346b32da6eddb9d2f1d333421f66089a842b1dcc89bb38fe00ea898db447e
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker logs audio-transformer-container[27mdocker logs audio-transformer-container
+[?2004l * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.2:5000
+[33mPress CTRL+C to quit[0m
+[2025-10-29 20:15:31,294] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:32,767] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:32,928] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:33,089] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:33,233] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:33,369] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:33,518] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:33,801] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:33,977] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:34,114] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:34,257] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:34,438] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker logs audio-transformer-container --tail 50[27mdocker logs audio-transformer-container --tail 50
+[?2004l               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-10-29 20:15:34,438] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/backend/app.py", line 7, in home
+    return render_template("index.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+192.168.56.1 - - [29/Oct/2025 20:15:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ tree
+[?2004l[01;34m.[0m
+├── audioTrasnformerApp.txt
+├── [01;34mbackend[0m
+│   ├── app.py
+│   └── [01;34mtemplates[0m
+├── [01;34mcpp[0m
+│   ├── [01;32mbuild.sh[0m
+│   └── cpp_processor.cpp
+├── [01;34mdocker_archive[0m
+├── Dockerfile
+├── index.html
+├── MY_PROGRESS.md
+├── README.md
+├── [01;34mstatic[0m
+│   ├── [01;34mcss[0m
+│   │   └── style.css
+│   ├── [01;34mimages[0m
+│   ├── [01;34mjs[0m
+│   │   └── script.js
+│   ├── [01;34mresults[0m
+│   └── [01;34muploads[0m
+└── [01;34mtemplates[0m
+    └── index.html
+
+12 directories, 11 files
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ c[K[7m# Remove the backend copy[27m
+[7mrm -rf backend/templates[27m
+
+[7m# Remove the floating root index.html[27m
+[7mrm index.html[27m
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# Remove the backend copy
+rm -rf backend/templates
+
+# Remove the floating root index.html
+rm index.html
+[A
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ tree
+[?2004l[01;34m.[0m
+├── audioTrasnformerApp.txt
+├── [01;34mbackend[0m
+│   └── app.py
+├── [01;34mcpp[0m
+│   ├── [01;32mbuild.sh[0m
+│   └── cpp_processor.cpp
+├── [01;34mdocker_archive[0m
+├── Dockerfile
+├── MY_PROGRESS.md
+├── README.md
+├── [01;34mstatic[0m
+│   ├── [01;34mcss[0m
+│   │   └── style.css
+│   ├── [01;34mimages[0m
+│   ├── [01;34mjs[0m
+│   │   └── script.js
+│   ├── [01;34mresults[0m
+│   └── [01;34muploads[0m
+└── [01;34mtemplates[0m
+    └── index.html
+
+11 directories, 10 files
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ cd backend/
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/backend[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/backend[00m$ ls
+[?2004lapp.py
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/backend[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/backend[00m$ cat app.py 
+[?2004lfrom flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/backend[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/backend[00m$ nano app.py 
+[?2004l[?2004h[?1049h[22;0;0t[1;40r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[38;72H(B[0;7m[ Reading... ](B[m[38;70H(B[0;7m[ Read 10 lines ](B[m[H(B[0;7m  GNU nano 7.2                                                               app.py                                                                         [1;155H(B[m[39d(B[0;7m^G(B[m Help[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[39;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40d(B[0;7m^X(B[m Exit[40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[40;120H(B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[2d(B[0;1m[36mfrom[39m(B[m flask (B[0;1m[36mimport[39m(B[m Flask, render_template[4dapp = Flask(__name__)[6d@app.route((B[0;1m[32m"/"[39m(B[m)[7d(B[0;1m[36mdef[34m home[39m(B[m():[8;5H(B[0;1m[36mreturn[39m(B[m render_template((B[0;1m[32m"index.html"[39m(B[m)[10d(B[0;1m[36mif[39m(B[m __name__ == (B[0;1m[32m"__main__"[39m(B[m:[11;5Happ.run(host=(B[0;1m[32m"0.0.0.0"[39m(B[m, port=5000)[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[11;39H[?25l[1;85H(B[0;7m*[155G(B[m[?12l[?25h[11;38H [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[38d[K[?12l[?25h[11;33H [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[11;18H"0.0.0.0[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[10;27H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[10;16H"__main__[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hi[K[?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[8;41H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[8;28H"index.html[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h(B[0;1m[36min[39m(B[m[K[?25l[?12l[?25hi[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[5Gretur[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[7;12H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hde[K[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[6;16H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h"/[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[4;22H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[2;41H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[12Gimpor[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hfro[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[36mfrom[39m(B[m flask (B[0;1m[36mimport[39m(B[m Flask, render_template[4d(B[0;1m[31m# Explicitly set template and static folder paths relative to backend/[5d[39m(B[mapp = Flask([6;5H__name__,[7;5Htemplate_folder=(B[0;1m[32m'../templates'[39m(B[m,[8;5Hstatic_folder=(B[0;1m[32m'../static'[9d[39m(B[m)[11d@app.route((B[0;1m[32m"/"[39m(B[m)[12d(B[0;1m[36mdef[34m home[39m(B[m():[13;4H(B[0;1m[31m # Render the homepage[14;5H[36mreturn[39m(B[m render_template((B[0;1m[32m"index.html"[39m(B[m)[16d(B[0;1m[36mif[39m(B[m __name__ == (B[0;1m[32m"__main__"[39m(B[m:[17;4H(B[0;1m[31m # Run the Flask app, listen on all interfaces so it can be accessed from host[18;5H[39m(B[mapp.run(host=(B[0;1m[32m"0.0.0.0"[39m(B[m, port=5000, debug=(B[0;1m[35mTrue[39m(B[m)[19d[?12l[?25h[?25l[18;51H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25hTru[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[18;18H"0.0.0.0[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[17;82H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[16;27H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[16;16H"__main__[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hi[K[?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[14;41H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[14;28H"index.html[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h(B[0;1m[36min[39m(B[m[K[?25l[?12l[?25hi[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[5Gretur[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[13;26H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[12;12H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hde[K[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[11;16H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h"/[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[A)[?12l[?25h[?25l[?12l[?25h[K[?25l[8;30H[?12l[?25h[?25l[?12l[?25h[8;19H'../static[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[7;36H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h[7;21H'../templates[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[6;14H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m    [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[5;13H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[4;71H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A[?12l[?25h[?25l[2;41H[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h[12Gimpor[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[42m [49m(B[m[K[?25l[?12l[?25h [?25l[?12l[?25hfro[K[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[36mfrom[39m(B[m flask (B[0;1m[36mimport[39m(B[m Flask, render_template[4d(B[0;1m[31m# Explicitly set template and static folder paths relative to backend/[5d[39m(B[mapp = Flask([6;5H__name__,[7;5Htemplate_folder=(B[0;1m[32m'../templates'[39m(B[m,[8;5Hstatic_folder=(B[0;1m[32m'../static'[9d[39m(B[m)[11d@app.route((B[0;1m[32m"/"[39m(B[m)[12d(B[0;1m[36mdef[34m home[39m(B[m():[13;4H(B[0;1m[31m # Render the homepage[14;5H[36mreturn[39m(B[m render_template((B[0;1m[32m"index.html"[39m(B[m)[16d(B[0;1m[36mif[39m(B[m __name__ == (B[0;1m[32m"__main__"[39m(B[m:[17;4H(B[0;1m[31m # Run the Flask app, listen on all interfaces so it can be accessed from host[18;5H[39m(B[mapp.run(host=(B[0;1m[32m"0.0.0.0"[39m(B[m, port=5000, debug=(B[0;1m[35mTrue[39m(B[m)[19d[?12l[?25h[?25l[39;18H[22X[39;40H(B[0;7mM-D(B[m DOS Format    [39;69H          (B[0;7mM-A(B[m Append        [103G        [118G(B[0;7mM-B(B[m Backup File[K[40;2H(B[0;7mC(B[m Cancel[40;18H[22X[40;40H(B[0;7mM-M(B[m Mac Format      [40;69H          (B[0;7mM-P(B[m Prepend[21X[40;118H(B[0;7m^T(B[m Browse[K[38d(B[0;7mFile Name to Write: app.py                                                                                                                                  [38;27H(B[m[?12l[?25h[?25l[38;71H[1K (B[0;7m[ Writing... ](B[m[K[1;85H(B[0;7m [155G(B[m[38;70H(B[0;7m[ Wrote 18 lines ](B[m[39;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is      (B[0;7m^K(B[m Cut[39;69H(B[0;7m^T(B[m Execute       (B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[118G  (B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket[40;2H(B[0;7mX(B[m Exit  [40;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace       (B[0;7m^U(B[m Paste[40;69H(B[0;7m^J(B[m Justify       (B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[118G  (B[0;7mM-6(B[m Copy[40;137H(B[0;7m^Q(B[m Where Was[?12l[?25h[19d[?25l[38d[J[40d[?12l[?25h[40;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite/backend[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite/backend[00m$ cd ..
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker stop audio-transformer-container[27m
+[7mdocker rm audio-transformer-container[27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker stop audio-transformer-container
+docker rm audio-transformer-container
+[A
+[?2004laudio-transformer-container
+audio-transformer-container
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker build -t audio-transformer-light .[27mdocker build -t audio-transformer-light .
+[?2004lDEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  284.2kB
+Step 1/8 : FROM python:3.11-slim
+ ---> ff15e80be861
+Step 2/8 : WORKDIR /app
+ ---> Using cache
+ ---> 8717d3949999
+Step 3/8 : COPY backend/ backend/
+ ---> 23655556ba58
+Step 4/8 : COPY templates/ templates/
+ ---> 8278381c8af2
+Step 5/8 : COPY static/ static/
+ ---> 179f57314968
+Step 6/8 : RUN pip install --no-cache-dir flask
+ ---> Running in 9e8dd75b1084
+Collecting flask
+  Downloading flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting blinker>=1.9.0 (from flask)
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from flask)
+  Downloading click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from flask)
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from flask)
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from flask)
+  Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from flask)
+  Downloading werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.3/103.3 kB 755.2 kB/s eta 0:00:00
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.3.0-py3-none-any.whl (107 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.3/107.3 kB 936.5 kB/s eta 0:00:00
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 1.1 MB/s eta 0:00:00
+Downloading markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading werkzeug-3.1.3-py3-none-any.whl (224 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.5/224.5 kB 1.7 MB/s eta 0:00:00
+Installing collected packages: markupsafe, itsdangerous, click, blinker, werkzeug, jinja2, flask
+Successfully installed blinker-1.9.0 click-8.3.0 flask-3.1.2 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.3 werkzeug-3.1.3
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[0m[91m
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+[0m ---> Removed intermediate container 9e8dd75b1084
+ ---> 75c53888333e
+Step 7/8 : EXPOSE 5000
+ ---> Running in c77949422c16
+ ---> Removed intermediate container c77949422c16
+ ---> 1a90a2e7b308
+Step 8/8 : CMD ["python3", "backend/app.py"]
+ ---> Running in 29228c678c0c
+ ---> Removed intermediate container 29228c678c0c
+ ---> 70c3eaaa21a1
+Successfully built 70c3eaaa21a1
+Successfully tagged audio-transformer-light:latest
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker run -d --name audio-transformer-container audio-transformer-light[27mdocker run -d --name audio-transformer-container audio-transformer-light
+[?2004l76e998941050b4b2153997f4e9f4ba41aaf70bffd7ff26d6223f8c9b95ba5de2
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker network connect audio-transformer-net audio-transformer-container[27mdocker network connect audio-transformer-net audio-transformer-container
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker run -d --name audio-transformer-container --network audio-transformer-net [27m[7m-[27m[7mp 5000:5000 audio-transformer-light[27m[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ docker run -d --name audio-transformer-container --network audio-transformer-net -p 5000:5000 audio-transformer-light
+[?2004ldocker: Error response from daemon: Conflict. The container name "/audio-transformer-container" is already in use by container "76e998941050b4b2153997f4e9f4ba41aaf70bffd7ff26d6223f8c9b95ba5de2". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker rm -f audio-transformer-container[27mdocker rm -f audio-transformer-container
+[?2004laudio-transformer-container
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ doce[Ke[Kker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker build -t audio-transformer-light .[27mdocker build -t audio-transformer-light .
+[?2004lDEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  292.4kB
+Step 1/8 : FROM python:3.11-slim
+ ---> ff15e80be861
+Step 2/8 : WORKDIR /app
+ ---> Using cache
+ ---> 8717d3949999
+Step 3/8 : COPY backend/ backend/
+ ---> Using cache
+ ---> 23655556ba58
+Step 4/8 : COPY templates/ templates/
+ ---> Using cache
+ ---> 8278381c8af2
+Step 5/8 : COPY static/ static/
+ ---> Using cache
+ ---> 179f57314968
+Step 6/8 : RUN pip install --no-cache-dir flask
+ ---> Using cache
+ ---> 75c53888333e
+Step 7/8 : EXPOSE 5000
+ ---> Using cache
+ ---> 1a90a2e7b308
+Step 8/8 : CMD ["python3", "backend/app.py"]
+ ---> Using cache
+ ---> 70c3eaaa21a1
+Successfully built 70c3eaaa21a1
+Successfully tagged audio-transformer-light:latest
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker run -d --name audio-transformer-container --network audio-transformer-net [27m[7m-[27m[7mp 5000:5000 audio-transformer-light[27m[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ docker run -d --name audio-transformer-container --network audio-transformer-net -p 5000:5000 audio-transformer-light
+[?2004ldf14d2b6ca205cfb6b6f8cd3114955501597f13eaa07666b783a225e77a47a54
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE                     COMMAND                  CREATED         STATUS         PORTS                                       NAMES
+df14d2b6ca20   audio-transformer-light   "python3 backend/app…"   5 seconds ago   Up 4 seconds   0.0.0.0:5000->5000/tcp, :::5000->5000/tcp   audio-transformer-container
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   audioTrasnformerApp.txt[m
+	[31mmodified:   backend/app.py[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mDockerfile[m
+	[31mstatic/[m
+	[31mtemplates/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ gi [Kt add 
