@@ -1,0 +1,19 @@
+# Python artifacts
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+
+# Docker
+docker_archive/
+*.tar
+
+# Uploads & results (these will be mounted volumes)
+static/uploads/*
+static/results/*
+
+# Ignore local secrets
+.env
