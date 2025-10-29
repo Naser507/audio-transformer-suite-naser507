@@ -17,3 +17,4 @@ static/results/*
 
 # Ignore local secrets
 .env
+Legacy_Image_1/

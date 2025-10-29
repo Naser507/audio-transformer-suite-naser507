@@ -1,0 +1,341 @@
+Script started on 2025-10-30 00:14:56+06:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="156" LINES="40"]
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ tree
+[?2004l[01;34m.[0m
+├── audioTrasnformerApp.txt
+├── [01;34mbackend[0m
+│   └── app.py
+├── [01;34mcpp[0m
+│   ├── [01;32mbuild.sh[0m
+│   └── cpp_processor.cpp
+├── [01;34mdocker_archive[0m
+├── MY_PROGRESS.md
+├── README.md
+└── [01;34mstatic[0m
+    ├── [01;34mresults[0m
+    └── [01;34muploads[0m
+
+7 directories, 6 files
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mcd ~/projects_series/audio-transformer-suite[27mcd ~/projects_series/audio-transformer-suite
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git init
+[?2004l[33mhint: Using 'master' as the name for the initial branch. This default branch name[m
+[33mhint: is subject to change. To configure the initial branch name to use in all[m
+[33mhint: of your new repositories, which will suppress this warning, call:[m
+[33mhint: [m
+[33mhint: 	git config --global init.defaultBranch <name>[m
+[33mhint: [m
+[33mhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and[m
+[33mhint: 'development'. The just-created branch can be renamed via this command:[m
+[33mhint: [m
+[33mhint: 	git branch -m <name>[m
+Initialized empty Git repository in /home/naser-xfce/projects_series/audio-transformer-suite/.git/
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git add .
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mgit commit -m "Initial commit: Base filesystem scaffolded for Audio Transformer S[27m[7mu[27m[7mite"[27m[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git commit -m "Initial commit: Base filesystem scaffolded for Audio Transformer Suite"
+[?2004l[master (root-commit) 0770a6a] Initial commit: Base filesystem scaffolded for Audio Transformer Suite
+ 7 files changed, 24 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 MY_PROGRESS.md
+ create mode 100644 README.md
+ create mode 100644 audioTrasnformerApp.txt
+ create mode 100644 backend/app.py
+ create mode 100755 cpp/build.sh
+ create mode 100644 cpp/cpp_processor.cpp
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mgit remote add origin https://github.com/<your-username>/audio-transformer-suite-[27m[7mn[27m[7maser507.git[27m[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git remote add origin https://github.com/<your-username>/audio-transformer-suite-naser507.git
+[?2004lbash: your-username: No such file or directory
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mgit remote -v[27mgit remote -v
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mgit branch -M main[27mgit branch -M main
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mgit push -u origin main[27mgit push -u origin main
+[?2004lfatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7m git remote add origin https://github.com/<your-username>/audio-transformer-suite[27m[7m-[27m[7mnaser507.git[27m[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$  git remote add origin https://github.com/<your-username>/audio-transformer-suite-naser507.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>/audio-transformer-suite-n[1Paser507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>/audio-transformer-suite-na[1Pser507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>/audio-transformer-suite-nas[1Per507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>/audio-transformer-suite-nase[1Pr507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>/audio-transformer-suite-naser[1P507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/audio-transformer-suite-naser5[1P07.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/audio-transformer-suite-naser50[1P7.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/audio-transformer-suite-naser507[1P.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/audio-transformer-suite-naser507.[1Pgit[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/audio-transformer-suite-naser507.g[1Pit[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/audio-transformer-suite-naser507.gi[1Pt[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/audio-transformer-suite-naser507.git[K[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/audio-transformer-suite-naser507.git [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/audio-transformer-suite-naser507.git
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/audio-transformer-suite-naser507.gitN/audio-transformer-suite-naser507.gita/audio-transformer-suite-naser507.git [A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs/audio-transformer-suite-naser507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce/audio-transformer-suite-naser507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr/audio-transformer-suite-naser507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5/audio-transformer-suite-naser507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0/audio-transformer-suite-naser507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7/audio-transformer-suite-naser507.git[A]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git remote -v
+[?2004lorigin	https://github.com/Naser507/audio-transformer-suite-naser507.git (fetch)
+origin	https://github.com/Naser507/audio-transformer-suite-naser507.git (push)
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git branch _m ma[K[K[K[K[K-M main 
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ git push -u origin main 
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 996 bytes | 45.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Naser507/audio-transformer-suite-naser507.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker stop $(docker ps -aq) 2>/dev/null[27mdocker stop $(docker ps -aq) 2>/dev/null
+[?2004lce6603807537
+96c57958b654
+1506cf63b27f
+96597e1ca05a
+5ac25e000230
+4b17c29d241d
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker rm $(docker ps -aq) 2>/dev/null[27mdocker rm $(docker ps -aq) 2>/dev/null
+[?2004lce6603807537
+96c57958b654
+1506cf63b27f
+96597e1ca05a
+5ac25e000230
+4b17c29d241d
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mcd ~/projects_series/audio-transformer-suite[27m
+[7mmkdir -p Legacy_Image_1/images Legacy_Image_1/volumes[27m
+[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~/projects_series/audio-transformer-suite
+mkdir -p Legacy_Image_1/images Legacy_Image_1/volumes
+[A
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ thr[K[Kree
+[?2004l[01;34m.[0m
+├── audioTrasnformerApp.txt
+├── [01;34mbackend[0m
+│   └── app.py
+├── [01;34mcpp[0m
+│   ├── [01;32mbuild.sh[0m
+│   └── cpp_processor.cpp
+├── [01;34mdocker_archive[0m
+├── [01;34mLegacy_Image_1[0m
+│   ├── [01;34mimages[0m
+│   └── [01;34mvolumes[0m
+├── MY_PROGRESS.md
+├── README.md
+└── [01;34mstatic[0m
+    ├── [01;34mresults[0m
+    └── [01;34muploads[0m
+
+10 directories, 6 files
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mmkdir -p Legacy_Image_1/images[27m
+[7mfor img in $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -v "<none>"); do[27m
+[7m    safe_name=$(echo $img | tr '/:' '__')[27m
+[7m    echo "Saving $img to Legacy_Image_1/images/${safe_name}.tar"[27m
+[7m    docker save -o Legacy_Image_1/images/${safe_name}.tar $img[27m
+[7mdone[27m
+[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p Legacy_Image_1/images
+for img in $(docker images --format "{{.Repository}}:{{.Tag}}" | grep -v "<none>"); do
+    safe_name=$(echo $img | tr '/:' '__')
+    echo "Saving $img to Legacy_Image_1/images/${safe_name}.tar"
+    docker save -o Legacy_Image_1/images/${safe_name}.tar $img
+done
+[A
+[?2004lSaving audio-analyzer:latest to Legacy_Image_1/images/audio-analyzer_latest.tar
+Saving todo-app-naser:latest to Legacy_Image_1/images/todo-app-naser_latest.tar
+Saving hello-node-app:latest to Legacy_Image_1/images/hello-node-app_latest.tar
+Saving node:20-alpine to Legacy_Image_1/images/node_20-alpine.tar
+Saving two-tier-flask-app-flask:latest to Legacy_Image_1/images/two-tier-flask-app-flask_latest.tar
+Saving python:3.10-slim to Legacy_Image_1/images/python_3.10-slim.tar
+Saving python:3.11-slim to Legacy_Image_1/images/python_3.11-slim.tar
+Saving python:3.12-slim to Legacy_Image_1/images/python_3.12-slim.tar
+Saving two-tier-backend:latest to Legacy_Image_1/images/two-tier-backend_latest.tar
+Saving flask-app:latest to Legacy_Image_1/images/flask-app_latest.tar
+Saving java-app:latest to Legacy_Image_1/images/java-app_latest.tar
+Saving mysql:latest to Legacy_Image_1/images/mysql_latest.tar
+Saving hello-world:latest to Legacy_Image_1/images/hello-world_latest.tar
+Saving python:3.9-slim to Legacy_Image_1/images/python_3.9-slim.tar
+Saving python:3.7 to Legacy_Image_1/images/python_3.7.tar
+Saving openjdk:17-jdk-alpine to Legacy_Image_1/images/openjdk_17-jdk-alpine.tar
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mls -lh Legacy_Image_1/images[27mls -lh Legacy_Image_1/images
+[?2004ltotal 5.6G
+-rw------- 1 naser-xfce naser-xfce 652M Oct 30 00:23 [0m[01;31maudio-analyzer_latest.tar[0m
+-rw------- 1 naser-xfce naser-xfce 982M Oct 30 00:27 [01;31mflask-app_latest.tar[0m
+-rw------- 1 naser-xfce naser-xfce 131M Oct 30 00:24 [01;31mhello-node-app_latest.tar[0m
+-rw------- 1 naser-xfce naser-xfce  22K Oct 30 00:28 [01;31mhello-world_latest.tar[0m
+-rw------- 1 naser-xfce naser-xfce 312M Oct 30 00:27 [01;31mjava-app_latest.tar[0m
+-rw------- 1 naser-xfce naser-xfce 899M Oct 30 00:28 [01;31mmysql_latest.tar[0m
+-rw------- 1 naser-xfce naser-xfce 131M Oct 30 00:24 [01;31mnode_20-alpine.tar[0m
+-rw------- 1 naser-xfce naser-xfce 312M Oct 30 00:30 [01;31mopenjdk_17-jdk-alpine.tar[0m
+-rw------- 1 naser-xfce naser-xfce 121M Oct 30 00:25 [01;31mpython_3.10-slim.tar[0m
+-rw------- 1 naser-xfce naser-xfce 124M Oct 30 00:25 [01;31mpython_3.11-slim.tar[0m
+-rw------- 1 naser-xfce naser-xfce 118M Oct 30 00:25 [01;31mpython_3.12-slim.tar[0m
+-rw------- 1 naser-xfce naser-xfce 970M Oct 30 00:30 [01;31mpython_3.7.tar[0m
+-rw------- 1 naser-xfce naser-xfce 119M Oct 30 00:28 [01;31mpython_3.9-slim.tar[0m
+-rw------- 1 naser-xfce naser-xfce 130M Oct 30 00:24 [01;31mtodo-app-naser_latest.tar[0m
+-rw------- 1 naser-xfce naser-xfce 352M Oct 30 00:25 [01;31mtwo-tier-backend_latest.tar[0m
+-rw------- 1 naser-xfce naser-xfce 352M Oct 30 00:24 [01;31mtwo-tier-flask-app-flask_latest.tar[0m
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdu -sh Legacy_Image_1/images[27mdu -sh Legacy_Image_1/images
+[?2004l5.6G	Legacy_Image_1/images
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mecho "Legacy_Image_1/" >> .gitignore[27mecho "Legacy_Image_1/" >> .gitignore
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mgit status[27mgit status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   .gitignore[m
+	[31mmodified:   audioTrasnformerApp.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mls -lh Legacy_Image_1/images > Legacy_Image_1/image_list.txt[27mls -lh Legacy_Image_1/images > Legacy_Image_1/image_list.txt
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mmkdir -p Legacy_Image_1/volumes[27mmkdir -p Legacy_Image_1/volumes
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mfor vol in $(docker volume ls -q); do[27m
+[7m    echo "Backing up $vol..."[27m
+[7m    docker run --rm -v ${vol}:/volume -v $(pwd)/Legacy_Image_1/volumes:/backup busybox \[27m
+[7m    tar czf /backup/${vol}.tar.gz -C /volume .[27m
+[7mdone[27m
+[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor vol in $(docker volume ls -q); do
+    echo "Backing up $vol..."
+    docker run --rm -v ${vol}:/volume -v $(pwd)/Legacy_Image_1/volumes:/backup busybox \
+    tar czf /backup/${vol}.tar.gz -C /volume .
+done
+[A
+[?2004lBacking up dockerized-database-setup_db_data...
+Unable to find image 'busybox:latest' locally
+latest: Pulling from library/busybox
+
+[1A[2Ke59838ecfec5: Pulling fs layer [1B[1A[2Ke59838ecfec5: Downloading [>                                                  ]  22.85kB/2.214MB[1B[1A[2Ke59838ecfec5: Downloading [===========>                                       ]  523.8kB/2.214MB[1B[1A[2Ke59838ecfec5: Downloading [=========================>                         ]  1.114MB/2.214MB[1B[1A[2Ke59838ecfec5: Downloading [=======================================>           ]  1.765MB/2.214MB[1B[1A[2Ke59838ecfec5: Downloading [==================================================>]  2.214MB/2.214MB[1B[1A[2Ke59838ecfec5: Verifying Checksum [1B[1A[2Ke59838ecfec5: Download complete [1B[1A[2Ke59838ecfec5: Extracting [>                                                  ]  32.77kB/2.214MB[1B[1A[2Ke59838ecfec5: Extracting [=================>                                 ]  786.4kB/2.214MB[1B[1A[2Ke59838ecfec5: Extracting [==================================================>]  2.214MB/2.214MB[1B[1A[2Ke59838ecfec5: Pull complete [1BDigest: sha256:e3652a00a2fabd16ce889f0aa32c38eec347b997e73bd09e69c962ec7f8732ee
+Status: Downloaded newer image for busybox:latest
+Backing up mysql-data...
+Backing up two-tier-flask-app_mysql-data...
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mls -lh Legacy_Image_1/volumes[27mls -lh Legacy_Image_1/volumes
+[?2004ltotal 19M
+-rw-r--r-- 1 root root 6.3M Oct 30 00:38 [0m[01;31mdockerized-database-setup_db_data.tar.gz[0m
+-rw-r--r-- 1 root root 5.9M Oct 30 00:38 [01;31mmysql-data.tar.gz[0m
+-rw-r--r-- 1 root root 6.2M Oct 30 00:38 [01;31mtwo-tier-flask-app_mysql-data.tar.gz[0m
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker volume ls -q | while read vol; do[27m
+[7m    echo "----- $vol -----"[27m
+[7m    docker volume inspect $vol --format '{{ .Mountpoint }}'[27m
+[7mdone[27m
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker volume ls -q | while read vol; do
+    echo "----- $vol -----"
+    docker volume inspect $vol --format '{{ .Mountpoint }}'
+done
+[A
+[?2004l----- dockerized-database-setup_db_data -----
+/var/lib/docker/volumes/dockerized-database-setup_db_data/_data
+----- mysql-data -----
+/var/lib/docker/volumes/mysql-data/_data
+----- two-tier-flask-app_mysql-data -----
+/var/lib/docker/volumes/two-tier-flask-app_mysql-data/_data
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7msudo du -sh /var/lib/docker/volumes/*/[27msudo du -sh /var/lib/docker/volumes/*/
+[?2004l[sudo] password for naser-xfce: *********         
+du: cannot access '/var/lib/docker/volumes/*/': No such file or directory
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7msudo du -sh /var/lib/docker/volumes/*/ | sort -h[27msudo du -sh /var/lib/docker/volumes/*/ | sort -h
+[?2004ldu: cannot access '/var/lib/docker/volumes/*/': No such file or directory
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker system df -v[27mdocker system df -v
+[?2004lImages space usage:
+
+REPOSITORY                 TAG             IMAGE ID       CREATED         SIZE      SHARED SIZE   UNIQUE SIZE   CONTAINERS
+audio-analyzer             latest          603f5a5b480d   24 hours ago    669MB     669.3MB       0B            0
+<none>                     <none>          8d7ba7ecda3b   25 hours ago    669MB     669.3MB       0B            0
+<none>                     <none>          5eb8198e4139   25 hours ago    669MB     669.3MB       0B            0
+<none>                     <none>          df361fa1d024   2 days ago      669MB     669.3MB       0B            0
+<none>                     <none>          c00ff1b299b2   2 days ago      669MB     669.3MB       0B            0
+<none>                     <none>          2c502d06d27a   2 days ago      824MB     823.9MB       0B            0
+<none>                     <none>          987f1cc35bc6   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          afce1e1aea39   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          10935ae81359   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          855fa60ac0a9   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          76952934f610   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          c000e66989a2   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          ebefcbed32ac   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          cdc039aa1bff   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          b95515ce8727   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          7f1cffb0b773   2 days ago      716MB     716.2MB       0B            0
+<none>                     <none>          c563b596fc3b   2 days ago      124MB     124.4MB       45B           0
+<none>                     <none>          b06430c3e48e   2 days ago      119MB     119.2MB       45B           0
+<none>                     <none>          548ec37d4468   2 days ago      119MB     119.2MB       45B           0
+todo-app-naser             latest          097e72dc667a   5 days ago      131MB     131MB         0B            0
+hello-node-app             latest          f107f495906e   7 days ago      134MB     134.4MB       0B            0
+node                       20-alpine       2b56f2779663   13 days ago     134MB     134.4MB       0B            0
+two-tier-flask-app-flask   latest          5d9df24d8c9a   2 weeks ago     360MB     360.1MB       187.3kB       0
+<none>                     <none>          71ace04a6242   2 weeks ago     360MB     360.1MB       186.4kB       0
+<none>                     <none>          408824d6d732   2 weeks ago     360MB     360.1MB       185.8kB       0
+python                     3.10-slim       4fb709907e2a   2 weeks ago     122MB     121.9MB       0B            0
+python                     3.11-slim       ff15e80be861   2 weeks ago     124MB     124.4MB       0B            0
+python                     3.12-slim       324231aabbd8   2 weeks ago     119MB     119.2MB       0B            0
+two-tier-backend           latest          08cc877ee7b0   2 weeks ago     360MB     360.3MB       0B            0
+flask-app                  latest          4e40fd335b25   3 weeks ago     1.01GB    1.006GB       0B            0
+java-app                   latest          d2e2a4526f4c   3 weeks ago     326MB     325.6MB       0B            0
+<none>                     <none>          64bf2fb89dae   3 weeks ago     326MB     325.6MB       0B            0
+mysql                      latest          85bdb7e77f7f   5 weeks ago     920MB     0B            920.2MB       0
+hello-world                latest          1b44b5a3e06a   2 months ago    10.1kB    0B            10.07kB       0
+python                     3.9-slim        abf3b76f84b9   2 months ago    120MB     120.5MB       0B            0
+busybox                    latest          08ef35a1c3f0   13 months ago   4.43MB    0B            4.429MB       0
+python                     3.7             16d93ae3411b   2 years ago     994MB     993.9MB       0B            0
+openjdk                    17-jdk-alpine   264c9bdce361   4 years ago     326MB     325.6MB       0B            0
+
+Containers space usage:
+
+CONTAINER ID   IMAGE     COMMAND   LOCAL VOLUMES   SIZE      CREATED   STATUS    NAMES
+
+Local Volumes space usage:
+
+VOLUME NAME                         LINKS     SIZE
+mysql-data                          0         218.4MB
+two-tier-flask-app_mysql-data       0         204.9MB
+dockerized-database-setup_db_data   0         204.9MB
+
+Build cache usage: 187.8kB
+
+CACHE ID       CACHE TYPE     SIZE      CREATED       LAST USED     USAGE     SHARED
+r7mo9fje12t7   regular        0B        2 weeks ago   2 weeks ago   1         true
+pgjpktzdb6xz   regular        0B        2 weeks ago   2 weeks ago   1         true
+iduwc43q8y4l   regular        0B        2 weeks ago   2 weeks ago   1         true
+io8qfh4l1ta5   regular        224MB     2 weeks ago   2 weeks ago   1         true
+1csiuic9ix7p   regular        186kB     2 weeks ago   2 weeks ago   1         true
+ljmhkazoh5kp   regular        67B       2 weeks ago   2 weeks ago   1         true
+o9izm8foe8tu   regular        8.78MB    2 weeks ago   2 weeks ago   1         true
+bq12bdq6201s   regular        0B        2 weeks ago   2 weeks ago   1         true
+2rpcmghfh3p8   regular        0B        2 weeks ago   2 weeks ago   1         true
+ok31owy7oet1   regular        7.26MB    2 weeks ago   2 weeks ago   2         true
+w3wc6qjy6adx   regular        186kB     2 weeks ago   2 weeks ago   1         true
+mgwttedbcszj   regular        177B      2 weeks ago   2 weeks ago   1         true
+rei3cc4if5zh   regular        187kB     2 weeks ago   2 weeks ago   1         true
+oeo5h6lw7aji   source.local   187kB     2 weeks ago   2 weeks ago   4         false
+qiu0dek8g8on   source.local   697B      2 weeks ago   2 weeks ago   4         false
+r7gj57rv6f9d   source.local   0B        2 weeks ago   2 weeks ago   4         false
+lf45zocn9x26   regular        177B      2 weeks ago   2 weeks ago   2         true
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ suc[Kdq[Ko su[Kystemctl stop docker.s[K[K
+[?2004l[0;1;38;5;185mStopping 'docker.service', but its triggering units are still active:[0m
+[0;1;38;5;185mdocker.socket[0m
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7msudo systemctl stop docker[27msudo systemctl stop docker
+[?2004l[0;1;38;5;185mStopping 'docker.service', but its triggering units are still active:[0m
+[0;1;38;5;185mdocker.socket[0m
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mmkdir -p ~/DockerBackUp[27mmkdir -p ~/DockerBackUp
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7msudo mv /var/lib/docker ~/DockerBackUp/docker_old[27msudo mv /var/lib/docker ~/DockerBackUp/docker_old
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ tree
+[?2004l[01;34m.[0m
+├── audioTrasnformerApp.txt
+├── [01;34mbackend[0m
+│   └── app.py
+├── [01;34mcpp[0m
+│   ├── [01;32mbuild.sh[0m
+│   └── cpp_processor.cpp
+├── [01;34mdocker_archive[0m
+├── [01;34mLegacy_Image_1[0m
+│   ├── image_list.txt
+│   ├── [01;34mimages[0m
+│   │   ├── [01;31maudio-analyzer_latest.tar[0m
+│   │   ├── [01;31mflask-app_latest.tar[0m
+│   │   ├── [01;31mhello-node-app_latest.tar[0m
+│   │   ├── [01;31mhello-world_latest.tar[0m
+│   │   ├── [01;31mjava-app_latest.tar[0m
+│   │   ├── [01;31mmysql_latest.tar[0m
+│   │   ├── [01;31mnode_20-alpine.tar[0m
+│   │   ├── [01;31mopenjdk_17-jdk-alpine.tar[0m
+│   │   ├── [01;31mpython_3.10-slim.tar[0m
+│   │   ├── [01;31mpython_3.11-slim.tar[0m
+│   │   ├── [01;31mpython_3.12-slim.tar[0m
+│   │   ├── [01;31mpython_3.7.tar[0m
+│   │   ├── [01;31mpython_3.9-slim.tar[0m
+│   │   ├── [01;31mtodo-app-naser_latest.tar[0m
+│   │   ├── [01;31mtwo-tier-backend_latest.tar[0m
+│   │   └── [01;31mtwo-tier-flask-app-flask_latest.tar[0m
+│   └── [01;34mvolumes[0m
+│       ├── [01;31mdockerized-database-setup_db_data.tar.gz[0m
+│       ├── [01;31mmysql-data.tar.gz[0m
+│       └── [01;31mtwo-tier-flask-app_mysql-data.tar.gz[0m
+├── MY_PROGRESS.md
+├── README.md
+└── [01;34mstatic[0m
+    ├── [01;34mresults[0m
+    └── [01;34muploads[0m
+
+10 directories, 26 files
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mmkdir -p ~/DockerBackUp[27mmkdir -p ~/DockerBackUp
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mmv ~/projects_series/audio-transformer-suite/Legacy_Image_1 ~/DockerBackUp/[27mmv ~/projects_series/audio-transformer-suite/Legacy_Image_1 ~/DockerBackUp/
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mls ~/DockerBackUp[27mls ~/DockerBackUp
+[?2004l[0m[01;34mdocker_old[0m  [01;34mLegacy_Image_1[0m
+[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker stop $(docker ps -aq) 2>/dev/null[27mdocker stop $(docker ps -aq) 2>/dev/null
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker rm $(docker ps -aq) 2>/dev/null[27mdocker rm $(docker ps -aq) 2>/dev/null
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-transformer-suite[01;32mnaser-xfce@naserxfce-VirtualBox[00m:[01;34m~/projects_series/audio-transformer-suite[00m$ [7mdocker rmi $(docker images -q) 2>/dev/null[27mdocker rmi $(docker images -q) 2>/dev/null
+[?2004l[?2004h]0;naser-xfce@naserxfce-VirtualBox: ~/projects_series/audio-tran
