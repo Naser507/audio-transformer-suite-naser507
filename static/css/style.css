@@ -1,35 +1,50 @@
-/* General body */
-body {
+/* Global Reset */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Montserrat:wght@400;600&display=swap');
+
+/* Body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dcdcdc; /* Light grey body */
+    color: #fff;
 }
 
 /* Header */
-header {
-    background-color: #6a0dad; /* purple */
-    color: white;
-    text-align: center;
-    padding: 20px;
+.main-header {
+    background: linear-gradient(to right, #6a0dad 70%, rgba(0, 0, 0, 0.5) 100%);
+    padding: 40px 20px;
+    text-align: right;
 }
 
-header hr {
-    border: 1px solid white;
-    width: 80%;
-    margin: 10px auto;
+.main-header .title {
+    font-family: 'Roboto Slab', serif; /* Roundish formal font */
+    font-size: 3rem;
+    font-weight: 900;
 }
 
-/* Main content */
-main {
-    background-color: white;
-    padding: 40px;
-    min-height: 400px;
+.main-header .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Main body */
+.main-body {
+    padding: 40px 20px;
+    background-color: #f0f0f0; /* Light grey */
+    color: #333;
 }
 
 /* Footer */
-footer {
-    background-color: #9b59b6; /* lighter purple */
-    color: white;
+.main-footer {
+    background-color: #7a33d3; /* Slightly lighter purple */
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
-
